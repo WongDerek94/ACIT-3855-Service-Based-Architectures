@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTANER Derek Wong "dwong393@my.bcit.ca"
+MAINTAINER Derek Wong "dwong393@my.bcit.ca"
 
 RUN apt-get update -y && \
     apt-get install -y python-pip python-dev
