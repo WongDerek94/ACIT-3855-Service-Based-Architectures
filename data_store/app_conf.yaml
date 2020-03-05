@@ -2,7 +2,7 @@ version: 1
 datastore:
   user: admin
   password: P@ssw0rd
-  hostname: mysql
+  hostname: ms-vm.westus.cloudapp.azure.com
   port: 3306
   db: events
 kafka:
