@@ -1,5 +1,5 @@
 version: 1
 kafka:
-  hostname: localhost
+  hostname: ms-vm
   port: 9092
   topic: events

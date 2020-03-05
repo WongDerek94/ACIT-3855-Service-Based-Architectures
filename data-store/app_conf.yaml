@@ -1,11 +1,11 @@
 version: 1
 datastore:
-  user: root
+  user: admin
   password: P@ssw0rd
-  hostname: localhost
+  hostname: ms-vm
   port: 3306
   db: events
 kafka:
-  hostname: localhost
+  hostname: ms-vm
   port: 9092
   topic: events
