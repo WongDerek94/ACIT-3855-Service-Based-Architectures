@@ -1,6 +1,6 @@
 version: 1
 datastore:
-  user: admin
+  user: root
   password: P@ssw0rd
   hostname: ms-vm.westus.cloudapp.azure.com
   port: 3306
