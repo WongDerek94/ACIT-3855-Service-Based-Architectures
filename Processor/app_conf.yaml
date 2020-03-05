@@ -4,4 +4,4 @@ datastore:
 scheduler:
   period_sec: 5
 eventstore:
-  url: http://ms-vm:8090
+  url: http://localhost:8090

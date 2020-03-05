@@ -25,6 +25,7 @@ services:
       - "zookeeper" 
   db: 
     image: mysql:5.7 
+    hostname: mysql
     restart: always 
     environment: 
       MYSQL_DATABASE: 'events' 
