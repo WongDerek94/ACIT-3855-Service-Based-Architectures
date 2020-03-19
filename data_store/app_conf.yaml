@@ -1,7 +1,7 @@
 version: 1
 datastore:
   user: root
-  password: P@ssw0rd
+  password: password
   hostname: ms-vm.westus.cloudapp.azure.com
   port: 3306
   db: events
