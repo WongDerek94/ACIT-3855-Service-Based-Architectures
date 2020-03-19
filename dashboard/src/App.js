@@ -36,7 +36,7 @@ function App() {
 
 
   const getStatistic = () => {
-    axios.get("http://ms-vm:8100/events/stats")
+    axios.get("http://ms-vm.westus.cloudapp.azure.com:8100/events/stats")
     .then(json => {
       console.log(json.data)
       setStatistic(json.data)
@@ -44,7 +44,7 @@ function App() {
   }
 
   const getCommonImmediateResidentialType = () => {
-    axios.get("http://ms-vm:8110/rental/immediate/common-residence")
+    axios.get("http://ms-vm.westus.cloudapp.azure.com:8110/rental/immediate/common-residence")
     .then(json => {
       console.log(json.data)
       setCommonImmediateResidence(json.data)
@@ -52,7 +52,7 @@ function App() {
   }
 
   const getCommonScheduledResidentialType = () => {
-    axios.get(`http://ms-vm:8110/rental/schedule/common-residence?startDate=2020-06-17T17:32:59.283Z&endDate=2020-06-17T17:32:59.283Z`)
+    axios.get(`http://ms-vm.westus.cloudapp.azure.com:8110/rental/schedule/common-residence?startDate=2020-06-17T17:32:59.283Z&endDate=2020-06-17T17:32:59.283Z`)
     .then(json => {
       console.log(json.data)
       setCommonScheduledResidence(json.data)

@@ -15,8 +15,12 @@ from future_residence_details import FutureResidenceDetails
 from pykafka import KafkaClient
 from flask_cors import CORS
 
-# Set up configuration parameters
-with open('app_conf.yaml', 'r') as f:
+# Try to use externalized configuration, if it's not present, use local configuration
+try:
+    with open('/config/app_conf.yaml', 'r') as f:
+        app_config = yaml.safe_load(f.read())
+except IOError:
+    with open('app_conf.yaml', 'r') as f:
     app_config = yaml.safe_load(f.read())
 
 with open('log_conf.yaml', 'r') as f:
